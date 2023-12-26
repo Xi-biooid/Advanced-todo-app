@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xi-biooidAdvanced-todo-App</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+    <link rel="manifest" href="favi/site.webmanifest">
+</head>
+<body>
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title"> What's up <input type="text" id="name" placeholder="name here"></h2>
+        </section>
+
+        <section class="create-todo">
+            <h3>create a to do</h3>
+
+            <form action="" id="new-todo-form">
+                <h4>what's on your to do ? list </h4>
+                <input type="text" name="content" id="content" placeholder="e.g. make a video">
+                <h4>Pick a category</h4>
+                <div class="options">
+
+                    <label>
+                        <input type="radio" name="category" id="category1" value="business">
+                        <span class="bubble business"></span>
+                        <div>Bussiness</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="category" id="category2" value="personal">
+                        <span class="bubble personal"></span>
+                        <div>personal</div>
+                    </label>
+
+                </div>
+                <input type="submit" value=" Add to do">
+            </form>
+        </section>
+
+        <section class="todo-list">
+            <h3>To Do List</h3>
+            <div class="list" id="todo-list">
+
+                <!-- <div class="todo-item done">
+                    <label for="">
+                        <input type="checkbox">
+                        <span class="bubble business"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value=" Make a Video" readonly>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete"> Delete</button>
+                    </div>
+                   
+                </div>
+                
+                <div class="todo-item">
+                    <label for="">
+                        <input type="checkbox">
+                        <span class="bubble personal"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value=" apply for scholar ship" readonly>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete"> Delete</button>
+                    </div>
+                   
+                </div> -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
